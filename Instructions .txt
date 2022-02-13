@@ -1,0 +1,544 @@
+
+Question no - 3.RoleAndUser(Standalone Program)
+
+Programming language- Java
+
+
+
+Question 1 :
+Create the root role and display it.
+Sample Input :
+Enter root role name : CEO
+Sample Output :
+CEO
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleH.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleH.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleH.java" to run program click enter. output will come.
+
+
+
+Question 2 :
+Now support the add sub role operation to the root role
+Sample Input :
+Enter root role name : CEO
+Operations :
+1. Add Sub Role.
+Operation to be performed : 1
+Enter sub role name : COO
+Enter reporting to role name : CEO
+Operations :
+1. Add Sub Role.
+Operation to be performed : 1
+Enter sub role name : CTO
+Enter reporting to role name : CEO
+Sample Output :
+CEO COO CTO
+
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHi.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHi.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHi.java" to run program click enter. output will come.
+
+
+
+
+Question 3 :
+Now the sub role can be added to any role. And also display the roles in role hierarchy
+order.
+The role hierarchy order of the above tree would be CEO, CCO ,CTO, Senior Product
+Engineering Manager, Senior Product Marketing Manager, Director of Technology.... and
+so on.
+
+Sample Input and Output :
+Enter root role name : CEO
+Operations :
+1. Add Sub Role.
+2. Display Roles.
+Operation to be performed : 1
+Enter sub role name : COO
+Enter reporting to role name : CEO
+Operations :
+1. Add Sub Role.
+2. Display Roles.
+Operation to be performed : 1
+Enter sub role name : CTO
+Enter reporting to role name : CEO
+Operations :
+1. Add Sub Role.
+2. Display Roles.
+
+Operation to be performed : 1
+Enter sub role name : Sr Product Eng Manager.
+Enter reporting to role name : COO
+Operations :
+1. Add Sub Role.
+2. Display Roles.
+Operation to be performed : 1
+Enter sub role name : Sr Product Marketing Manager.
+Enter reporting to role name : COO
+Operations :
+1. Add Sub Role.
+2. Display Roles.
+Operation to be performed : 1
+Enter sub role name : Director of Technology
+Enter reporting to role name : CTO.
+Operations :
+1. Add Sub Role.
+2. Display Roles
+Operation to be performed : 2
+CEO, COO, CTO, Sr Product Eng Manager, Sr Product Marketing Manager, Director of
+Technology.
+
+
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHierarchy.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHierarchy.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHierarchy.java" to run program click enter. output will come.
+
+
+Question 4 :
+
+Support delete role operation. If a role is deleted then all its properties (child roles) will
+be transferred to the role entered by the user as input.
+Sample Input and Output :
+Operations :
+1. Add Sub Role.
+2. Display Roles.
+3. Delete Role.
+Operation to be performed : 3
+Enter the role to be deleted : COO
+Enter the role to be transferred : Director of Technology.
+Operations :
+1. Add Sub Role.
+2. Display Roles.
+3. Delete Role.
+Operation to be performed : 2
+CEO, CTO, Director of Technology, Sr Product Eng Manager, Sr Product Marketing
+Manager.
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHier.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHier.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHier.java" to run program click enter. output will come.
+
+
+Question 5 :
+
+
+Users can be added and a role can be assigned to them. Same role can be assigned to
+more than one user but an user can have only single role. So support Add User operation
+and Display Users operation (users can be displayed in any order).
+Sample Input and Output : (Consider question 3 for role inputs)
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+Operation to be performed : 4
+Enter User Name : Tyson
+Enter Role : CEO
+
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+Operation to be performed : 4
+Enter User Name : Ray
+Enter Role : COO
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+
+Operation to be performed : 4
+Enter User Name : Max
+Enter Role : Director of Technology
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+Operation to be performed : 4
+Enter User Name : Kenny
+Enter Role : Director of Technology
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+Operation to be performed : 4
+Enter User Name : Will
+Enter Role : Sr Product Eng Manager
+Operation to be perfomed : 5
+Tyson - CEO
+Ray - COO
+Max - Director of Technology
+Kenny - Director of Technology
+Will - Sr Product Eng Manager
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHiera.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHiera.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHiera.java" to run program click enter. output will come.
+
+
+Question 6 :
+
+Display each user with the list of users who are working under the particular user. (This is
+decided based on the role of the user). For example, according to the above given role
+diagram, Manager - Engineering, Developer, Tester, DevOps works under Sr Product Eng
+Manager.
+Sample Input and Output : (Consider question 3 and question 5 for role and user
+inputs)
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+Operation to be performed : 6
+Tyson - Ray, Max, Kenny, Will
+Ray - Will
+Max -
+Kenny -
+Will-
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHierar.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHierar.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHierar.java" to run program click enter. output will come.
+
+
+Question 7 :
+
+
+Support delete user operation and also while deleting a role the user with the current role
+is transferred to the role to be transferred.
+Sample Input and Output : (Consider question 3 and question 5 for role and user
+inputs)
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+Operation to be performed : 7
+Enter username to be deleted : Ray
+Tyson - Max, Kenny, Will
+Max -
+Kenny -
+Will -
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+Operation to be performed : 3
+Enter the role to be deleted : COO
+Enter the role to be transferred : Technical Architect.
+
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+Operation to be performed : 5
+Tyson - CEO
+Max - Director of Technology
+Kenny - Director of Technology
+Will - Sr Product Eng Manager
+Ray - Technical Architect
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+Operation to be performed : 6
+Tyson - Max, Kenny, Will, Ray
+Max - Ray
+Kenny - Ray
+Will -
+Ray -
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHierarc.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHierarc.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHierarc.java" to run program click enter. output will come.
+
+
+Question 8 :
+With a user name find the number of users between the top most role user and the entered
+user i.e number of users between the user with root role and the entered user (include root
+role users also).
+Sample Input and Output : (Consider question 3 and question 5 for role and user
+inputs)
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+8. Number of users from top.
+Operation to be performed : 8
+Enter user name : Will
+Number of users from top : 2
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+8. Number of users from top
+Operation to be performed : 8
+Enter user name : Kenny
+Number of users from top : 1
+
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHierarch.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHierarch.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHierarch.java" to run program click enter. output will come.
+
+
+Question 9 :
+
+Support an operation to find the height of the entire role hierarchy (height of the
+hierarchy tree).
+Sample Input and Output : (Consider question 3 and question 5 for role and user
+inputs)
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+8. Number of users from top
+9. Height of role hierachy.
+Operation to be performed : 9
+height - 3
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHierarchyr.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHierarchyr.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHierarchyr.java" to run program click enter. output will come.
+
+
+
+Question 10 :
+
+Support an operation to find the top most common boss of the entered users.
+Sample Input and Output : (Consider question 3 and question 5 for role and user
+inputs)
+Operations :
+1. Add Sub Role.
+2. Display Roles
+3. Delete Role.
+4. Add User.
+5. Display Users.
+6. Display Users and Sub Users.
+7. Delete User.
+8. Number of users from top
+9. Height of role hierachy.
+10. Common boss of users
+Operation to be performed : 10
+Enter user 1 : Will
+Enter user 2 : Kenny
+Top most common boss : Tyson
+
+
+Instructions :
+
+Step 1: Start wirte the Program in Notepad.
+
+Step 2:  Click on "file" then select"Save  As" .
+
+Step 3: By "File name:" change the name of file to"RoleHierarchyro.java" and save as the desktop.
+
+Step 3: Installed the Java JDK.  
+
+Step 4: Open the Command Prompt.
+
+Step 5: Once int the Command Prompt type "Set path=C:\Program Files\Java\jdk-14.0.2\bin" click enter.
+
+Step 6: Next line  type "cd Desktop" click enter.
+
+Step 7:Next line Compile the Program type "javac RoleHierarchyro.java" clik enter.
+
+Step 8: Next line Run the Program typr "java RoleHierarchyro
+
+.java" to run program click enter. output will come.
+
+
+
+
